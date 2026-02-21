@@ -7,7 +7,7 @@
         <Button x:Name="btnReturn"
                 Clicked="btnReturn_Clicked"
                 Text="Return to Contacts"/>
-        <Image x:Name="imgContact" Margin="15"/>
+        <Image x:Name="imgContact" Margin="15" HeightRequest="300"/>
         <Label x:Name="lblName" FontSize="Medium"/>
         <Label x:Name="lblDescription" FontAttributes="Italic"/>
         <Label x:Name="lblEmail" FontSize="Micro"/>

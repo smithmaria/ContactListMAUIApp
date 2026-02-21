@@ -5,7 +5,19 @@
              Title="Contacts">
 
     <ScrollView>
-        <CollectionView x:Name="contactsCltnView" SelectionMode="Single" SelectionChanged="contactsCltnView_SelectionChanged">
+        <CollectionView x:Name="contactsCltnView" 
+                        SelectionMode="Single" 
+                        SelectionChanged="contactsCltnView_SelectionChanged"
+                        IsGrouped="True">
+            <CollectionView.GroupHeaderTemplate>
+                <DataTemplate>
+                    <Label Text="{Binding Key}" 
+                           FontSize="16" 
+                           FontAttributes="Bold"
+                           BackgroundColor="LightGray"
+                           Padding="10,5"/>
+                </DataTemplate>
+            </CollectionView.GroupHeaderTemplate>
             <CollectionView.ItemTemplate>
                 <DataTemplate>
                     <Border  Stroke="Transparent" Padding="10" Margin="0,0,0,1">
