@@ -8,9 +8,9 @@
                 Clicked="btnReturn_Clicked"
                 Text="Return to Contacts"/>
         <Image x:Name="imgContact" Margin="15" HeightRequest="300"/>
-        <Label x:Name="lblName" FontSize="Medium"/>
+        <Label x:Name="lblName" FontSize="Title"/>
         <Label x:Name="lblDescription" FontAttributes="Italic"/>
-        <Label x:Name="lblEmail" FontSize="Micro"/>
-        <Label x:Name="lblPhone" FontSize="Micro"/>
+        <Label x:Name="lblEmail" FontSize="Medium"/>
+        <Label x:Name="lblPhone" FontSize="Medium"/>
     </VerticalStackLayout>
 </ContentPage>
